@@ -1,0 +1,30 @@
+스프링 튤
+https://github.com/spring-attic/toolsuite-distribution/wiki/Spring-Tool-Suite-3
+-마지막 버전(제일위에꺼full distribution on Eclipse 4.21)
+-압축풀고 bundle\sts-3.9.18.RELEASE -> sts.exe 실행
+- 드라이브에 spring_workspace 파일생성후 lanch 
+
+<살행되면>
+NEW 
+- spring regacy project
+- spring bean configuration file
+- spring web flow definition file 
+가 있으면 됨
+
+<스프링 파일 있는곳에>
+롬복 파일 넣어주고 인스톨해주기
+
+스프링 실행해서 서버 톰캣으로 새로 설치해주기
+
+
+<메이븐 프로젝트 생성(영상)>
+- 메이븐 레파지토리 에서 spring context 검색
+- (5버전 가장 마지막에 버전을 들어가서 메이븐형태의 테그복사)
+ 	form.xml에 추가(메모장에거 복붙)
+	빌드도 해주고난뒤
+
+- 메이븐 업데이트 후 실행해보기
+- target 폴더에 jar 파일이 생성되면 빌드 완료 된것
+
+
+- 메이븐

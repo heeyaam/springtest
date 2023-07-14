@@ -1,0 +1,3 @@
+ serviceImpl 에는 @Service
+vo 에는 @Data
+controller 에는 @Controller

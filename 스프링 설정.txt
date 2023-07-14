@@ -1,0 +1,32 @@
+1. web.xml 설정
+2. log4j 경로 변경(pdf참조)(dtd 부분에 복붙)
+3. porm.xml 수정
+--3개 하고 나서 (기본 - db - mybatis 각각 할때마다 실행해보기)
+서버실행해서 실행하는지 확인하기(기본꺼 뜨면 이상없는것임)
+
+
+4. root-context.xml 에 db관련 파일 분리하고 namespaces에 context 추가하기
+db 관련분리 하기
+src/main/resources 밑에 config 폴더 생성 -> db.properties 파일 생성
+
+
+
+https://mybatis.org/mybatis-3/ko/getting-started.html
+
+
+
+
+<mapper namespace="com.yedam.app.emp.mapper.EmpMapper>
+	<select id="getEmp" resultTyp="om.yedam.app.emp.service.EmpVO">
+		SELECT employee_id,
+				first_name,
+				 last_name,
+				 email,
+				 hire_date,
+				 job_id,
+				 department_id,
+				 salary
+		FROM employees
+		WHERE employee_id =#{employee_id}
+	</select>
+</mapper>
